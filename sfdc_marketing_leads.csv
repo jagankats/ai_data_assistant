@@ -1,0 +1,31 @@
+lead_id,created_date,lead_source,lead_status,campaign_name,email,phone,company,industry,score,converted
+L001,2023-01-15,Website,Qualified,Campaign A,john.doe@example.com,555-0101,TechCorp,Technology,85,1
+L002,2023-01-20,Social Media,Contacted,Campaign B,jane.smith@example.com,555-0102,DataSys,Technology,72,0
+L003,2023-01-25,Email,Qualified,Campaign C,bob.johnson@example.com,555-0103,FinServe,Finance,91,1
+L004,2023-02-01,Referral,Nurturing,Campaign A,alice.brown@example.com,555-0104,HealthPlus,Healthcare,68,0
+L005,2023-02-05,Trade Show,Qualified,Campaign D,charlie.wilson@example.com,555-0105,ManuFact,Manufacturing,88,1
+L006,2023-02-10,Website,Contacted,Campaign B,diana.davis@example.com,555-0106,RetailMax,Retail,75,0
+L007,2023-02-15,Social Media,Qualified,Campaign C,edward.miller@example.com,555-0107,EduLearn,Education,82,1
+L008,2023-02-20,Email,Nurturing,Campaign A,fiona.garcia@example.com,555-0108,LogiTrans,Logistics,69,0
+L009,2023-02-25,Referral,Qualified,Campaign D,george.lopez@example.com,555-0109,ConstrBuild,Construction,90,1
+L010,2023-03-01,Website,Contacted,Campaign B,helen.martinez@example.com,555-0110,EnergySol,Energy,77,0
+L011,2023-03-05,Trade Show,Qualified,Campaign C,ian.rodriguez@example.com,555-0111,FoodChain,Food & Beverage,84,1
+L012,2023-03-10,Social Media,Nurturing,Campaign A,julia.lee@example.com,555-0112,AutoDrive,Automotive,71,0
+L013,2023-03-15,Email,Qualified,Campaign D,karen.walker@example.com,555-0113,PharmaCare,Pharmaceuticals,89,1
+L014,2023-03-20,Referral,Contacted,Campaign B,larry.hall@example.com,555-0114,TeleCom,Telecommunications,73,0
+L015,2023-03-25,Website,Qualified,Campaign C,maria.allen@example.com,555-0115,InsureCorp,Insurance,86,1
+L016,2023-03-30,Trade Show,Nurturing,Campaign A,nathan.young@example.com,555-0116,RealtyPlus,Real Estate,70,0
+L017,2023-04-05,Social Media,Qualified,Campaign D,olivia.hernandez@example.com,555-0117,TravelHub,Travel & Hospitality,87,1
+L018,2023-04-10,Email,Contacted,Campaign B,patrick.king@example.com,555-0118,MediaGroup,Media & Entertainment,74,0
+L019,2023-04-15,Referral,Qualified,Campaign C,quincy.wright@example.com,555-0119,SportsGear,Sports,83,1
+L020,2023-04-20,Website,Nurturing,Campaign A,rachel.lopez@example.com,555-0120,AgriTech,Agriculture,76,0
+L021,2023-04-25,Trade Show,Qualified,Campaign D,steven.hill@example.com,555-0121,MiningCorp,Mining,92,1
+L022,2023-04-30,Social Media,Contacted,Campaign B,tina.adams@example.com,555-0122,ChemInd,Chemicals,78,0
+L023,2023-05-05,Email,Qualified,Campaign C,ursula.baker@example.com,555-0123,TextileCo,Textiles,81,1
+L024,2023-05-10,Referral,Nurturing,Campaign A,victor.gonzalez@example.com,555-0124,PackCorp,Packaging,67,0
+L025,2023-05-15,Website,Qualified,Campaign D,wendy.nelson@example.com,555-0125,ElectroTech,Electronics,93,1
+L026,2023-05-20,Trade Show,Contacted,Campaign B,xavier.carter@example.com,555-0126,MetalWorks,Metals,79,0
+L027,2023-05-25,Social Media,Qualified,Campaign C,yasmine.mitchell@example.com,555-0127,GlassInd,Glass,85,1
+L028,2023-05-30,Email,Nurturing,Campaign A,zachary.roberts@example.com,555-0128,WoodProd,Wood Products,72,0
+L029,2023-06-05,Referral,Qualified,Campaign D,amber.thompson@example.com,555-0129,PaperMill,Paper,88,1
+L030,2023-06-10,Website,Contacted,Campaign B,brandon.white@example.com,555-0130,PlasticCorp,Plastics,80,0

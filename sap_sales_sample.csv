@@ -1,0 +1,41 @@
+order_id,order_date,customer_name,segment,country,region,product_name,category,sub_category,quantity,sales,discount,profit
+CA-2019-152156,2019-11-08,Claire Gute,Consumer,United States,West,Stapler,Office Supplies,Storage,2,22.38,0.00,2.51
+CA-2019-152156,2019-11-08,Claire Gute,Consumer,United States,West,Paper,Office Supplies,Paper,3,39.00,0.00,8.49
+CA-2019-138688,2019-06-12,Darrin Van Huff,Corporate,United States,West,Chair,Furniture,Chairs,2,219.58,0.00,41.91
+CA-2019-148687,2019-10-11,Sean O'Donnell,Consumer,United States,West,Printer,Technology,Machines,1,660.00,0.00,187.97
+US-2018-108966,2018-10-11,Howard Snyder,Corporate,United States,East,Bookcase,Furniture,Bookcases,2,957.58,0.00,194.64
+CA-2019-112806,2019-03-15,Kendra Baker,Consumer,Canada,Central,Binders,Office Supplies,Binders,1,15.17,0.00,7.28
+CA-2018-124632,2018-06-17,Linda Mitchell,Home Office,Canada,Central,Labels,Office Supplies,Labels,2,14.62,0.00,2.12
+CA-2019-103077,2019-02-08,John Smith,Corporate,United Kingdom,Europe,Monitor,Technology,Accessories,3,310.50,0.10,42.73
+CA-2019-119100,2019-01-05,Mary Young,Consumer,Germany,Europe,Telephone,Technology,Phones,1,99.99,0.00,26.25
+CA-2019-121520,2019-04-15,Claire Gute,Consumer,United States,West,Desk,Furniture,Desks,1,450.00,0.15,98.34
+CA-2019-130547,2019-05-05,Christopher Walker,Corporate,France,Europe,Binder Clips,Office Supplies,Storage,5,12.35,0.00,3.15
+CA-2019-125778,2019-08-06,Michael Wright,Small Business,Australia,South,Chair Mat,Office Supplies,Accessories,1,29.96,0.05,4.16
+CA-2018-138407,2018-07-17,Martin King,Home Office,United States,Central,Laptop,Technology,Computers,1,1800.00,0.10,324.00
+CA-2019-117535,2019-05-12,Peter Hall,Corporate,Canada,Central,File Cabinet,Furniture,Storage,1,650.00,0.00,120.00
+CA-2019-117961,2019-10-05,Laura Roberts,Consumer,United Kingdom,Europe,Paper Roll,Office Supplies,Paper,10,25.00,0.00,5.00
+CA-2018-142659,2018-11-22,Karen Bell,Consumer,Germany,Europe,Labels,Office Supplies,Labels,4,29.24,0.00,5.76
+CA-2019-119572,2019-03-17,Megan Flynn,Corporate,Australia,South,Notebook,Office Supplies,Paper,6,54.00,0.00,13.50
+CA-2019-128849,2019-09-28,Sami Khan,Small Business,United Kingdom,Europe,Printer Paper,Office Supplies,Paper,12,231.84,0.00,43.98
+CA-2019-134418,2019-12-19,Grace Lee,Consumer,United States,East,Desk Accessories,Office Supplies,Accessories,3,67.50,0.00,12.15
+CA-2019-138201,2019-08-07,David Brown,Corporate,France,Europe,Storage Folder,Office Supplies,Storage,8,84.00,0.00,18.36
+CA-2019-110822,2019-02-25,Olivia Patel,Home Office,Germany,Europe,Smartphone,Technology,Phones,2,1299.98,0.00,324.99
+CA-2019-105524,2019-04-30,Michael Johnson,Consumer,United States,South,Chair,Furniture,Chairs,4,879.16,0.00,119.84
+CA-2019-109080,2019-03-05,Alex Taylor,Corporate,Australia,South,Office Desk,Furniture,Desks,1,399.99,0.05,60.00
+CA-2019-106245,2019-06-08,Sophie Moore,Small Business,Canada,Central,Wireless Mouse,Technology,Accessories,5,112.45,0.00,20.24
+CA-2018-123456,2018-12-01,Emma Wilson,Corporate,United States,East,Conference Table,Furniture,Tables,1,2100.00,0.10,330.00
+CA-2019-127845,2019-07-23,Robert Green,Small Business,United Kingdom,Europe,Storage Cabinet,Furniture,Storage,1,520.00,0.05,78.00
+CA-2019-133355,2019-11-15,Anna Scott,Consumer,France,Europe,Highlighter,Office Supplies,Art,20,34.00,0.00,6.80
+CA-2019-107892,2019-01-20,Daniel Turner,Corporate,Germany,Europe,Tablet,Technology,Computers,2,1398.00,0.00,235.20
+CA-2019-101215,2019-02-11,Jessica Adams,Home Office,Australia,South,Copy Paper,Office Supplies,Paper,30,210.00,0.10,18.90
+CA-2019-118745,2019-09-09,Jason Wright,Consumer,United States,West,Headphones,Technology,Accessories,3,291.00,0.00,58.20
+CA-2019-101382,2019-03-04,Melissa Baker,Corporate,Canada,Central,Filing Cabinet,Furniture,Storage,1,299.99,0.00,54.00
+CA-2019-111111,2019-05-21,Sandra Collins,Small Business,United States,South,Desk Chair,Furniture,Chairs,2,315.00,0.00,52.50
+CA-2019-112345,2019-07-10,Kevin Turner,Consumer,United Kingdom,Europe,Projector,Technology,Accessories,1,650.00,0.10,80.00
+CA-2019-122222,2019-08-17,Fiona Anderson,Home Office,Germany,Europe,Whiteboard,Office Supplies,Supplies,1,75.00,0.00,12.50
+CA-2019-132345,2019-10-30,Mark Davis,Corporate,France,Europe,Laptop Stand,Technology,Accessories,4,199.96,0.00,35.99
+CA-2019-142345,2019-12-05,Rachel Green,Consumer,Australia,South,Printer Ink,Office Supplies,Supplies,8,320.00,0.00,56.00
+CA-2019-152345,2019-12-12,Ivan Petrov,Small Business,United States,East,Ergonomic Keyboard,Technology,Accessories,5,274.95,0.00,54.99
+CA-2019-162345,2019-12-15,Laura Wilson,Corporate,Canada,Central,Drawer Organizer,Office Supplies,Storage,3,45.00,0.00,7.50
+CA-2019-172345,2019-12-17,James Martin,Consumer,United Kingdom,Europe,Desk Lamp,Technology,Accessories,2,78.00,0.00,12.42
+CA-2019-182345,2019-12-20,Sophia Lewis,Consumer,Germany,Europe,Meeting Table,Furniture,Tables,1,1249.99,0.05,187.49
