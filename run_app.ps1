@@ -11,7 +11,7 @@ $env:Path = "C:\Program Files\nodejs;" + $env:Path
 # Start backend in background
 Write-Host "Starting FastAPI backend on http://localhost:8000" -ForegroundColor Cyan
 $backendJob = Start-Job -ScriptBlock {
-    Set-Location "D:\Python\AI_Data_Engineer\rag_data_assistant"
+    Set-Location "D:\Python\AI_Data_Engineer\ai_data_assistant"
     & "D:\Python\.venv\Scripts\Activate.ps1"
     python backend/api.py
 }
@@ -21,7 +21,7 @@ Start-Sleep -Seconds 3
 
 # Start frontend
 Write-Host "Starting React frontend on http://localhost:3000" -ForegroundColor Cyan
-Set-Location "D:\Python\AI_Data_Engineer\rag_data_assistant\frontend"
+Set-Location "D:\Python\AI_Data_Engineer\ai_data_assistant\frontend"
 npm start
 
 # When frontend exits, stop backend

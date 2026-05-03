@@ -4,3 +4,7 @@ python-dotenv
 fastapi
 uvicorn[standard]
 pydantic
+transformers
+torch
+huggingface_hub
+sqlparse

@@ -25,8 +25,8 @@ ollama pull mistral
 
 ### 2️⃣ Clone & Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/rag_data_assistant.git
-cd rag_data_assistant
+git clone https://github.com/YOUR_USERNAME/ai_data_assistant.git
+cd ai_data_assistant
 
 # Python setup
 python -m venv .venv
@@ -134,8 +134,8 @@ ollama pull mistral
 
 ### 2️⃣ Clone & Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/rag_data_assistant.git
-cd rag_data_assistant
+git clone https://github.com/YOUR_USERNAME/ai_data_assistant.git
+cd ai_data_assistant
 
 # Python setup
 python -m venv .venv

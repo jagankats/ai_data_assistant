@@ -7,8 +7,8 @@ Thank you for your interest in contributing! Here's how to get started.
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/rag_data_assistant.git
-   cd rag_data_assistant
+   git clone https://github.com/YOUR_USERNAME/ai_data_assistant.git
+   cd ai_data_assistant
    ```
 
 3. **Create a feature branch**:

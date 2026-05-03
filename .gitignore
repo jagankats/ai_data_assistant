@@ -18,6 +18,32 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node.js (for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .eggs/
 *.egg-info/
 .python-version

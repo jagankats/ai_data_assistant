@@ -36,7 +36,7 @@ ollama pull neural-chat
 
 ### Step 5: Install Python Packages
 ```powershell
-cd d:\Python\AI_Data_Engineer\rag_data_assistant
+cd d:\Python\AI_Data_Engineer\ai_data_assistant
 pip install -r requirements.txt
 ```
 

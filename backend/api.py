@@ -7,9 +7,11 @@ import logging
 import os
 import re
 import sys
+from transformers import pipeline
+import torch
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, OLLAMA_API_URL, OLLAMA_MODEL
+from config import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, HUGGINGFACE_API_KEY, HUGGINGFACE_MODEL
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -46,43 +48,61 @@ def get_database_connection():
     )
 
 
-def execute_ollama_prompt(prompt: str, max_tokens: int = 300, temperature: float = 0.5) -> str:
-    payload = {
-        "model": OLLAMA_MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "temperature": temperature,
+def execute_huggingface_prompt(prompt: str, max_tokens: int = 300, temperature: float = 0.5) -> str:
+    """Execute prompt using Hugging Face Inference API (free tier)"""
+    api_url = f"https://api-inference.huggingface.co/models/{HUGGINGFACE_MODEL}"
+
+    headers = {
+        "Authorization": f"Bearer {HUGGINGFACE_API_KEY}",
+        "Content-Type": "application/json"
     }
+
+    payload = {
+        "inputs": prompt,
+        "parameters": {
+            "max_new_tokens": max_tokens,
+            "temperature": temperature,
+            "do_sample": True,
+            "return_full_text": False
+        },
+        "options": {
+            "wait_for_model": True,
+            "use_cache": True
+        }
+    }
+
     try:
-        # Increased timeout for model loading and processing
-        response = requests.post(OLLAMA_API_URL, json=payload, timeout=120)  # 2 minutes
+        response = requests.post(api_url, headers=headers, json=payload, timeout=60)
         response.raise_for_status()
-        return response.json().get("response", "").strip()
+
+        result = response.json()
+        if isinstance(result, list) and len(result) > 0:
+            return result[0].get("generated_text", "").strip()
+        elif isinstance(result, dict):
+            return result.get("generated_text", "").strip()
+        else:
+            return str(result).strip()
+
     except requests.exceptions.Timeout:
         raise Exception(
-            "Ollama request timed out. The model might be loading or the prompt is too complex. "
-            "Try again in a few moments, or use a simpler question."
-        )
-    except requests.exceptions.ConnectionError:
-        raise Exception(
-            f"Cannot connect to Ollama at {OLLAMA_API_URL}. "
-            "Make sure Ollama is running with: 'ollama serve'"
+            "Hugging Face request timed out. The model might be loading. "
+            "Try again in a few moments."
         )
     except requests.exceptions.HTTPError as http_error:
-        if response.status_code == 404:
+        if response.status_code == 503:
             raise Exception(
-                f"Model '{OLLAMA_MODEL}' not found. "
-                f"Make sure it's installed with: 'ollama pull {OLLAMA_MODEL}'"
-            )
-        elif response.status_code == 503:
-            raise Exception(
-                f"Model '{OLLAMA_MODEL}' is still loading. "
+                "Hugging Face model is currently loading. "
                 "Please wait a moment and try again."
             )
+        elif response.status_code == 429:
+            raise Exception(
+                "Hugging Face rate limit exceeded. "
+                "Please wait a moment before trying again."
+            )
         else:
-            raise Exception(f"Ollama HTTP error {response.status_code}: {http_error}")
+            raise Exception(f"Hugging Face API error {response.status_code}: {http_error}")
     except Exception as error:
-        raise Exception(f"Ollama API error: {error}")
+        raise Exception(f"Hugging Face API error: {error}")
 
 
 def load_database_schema_prompt() -> str:
@@ -209,7 +229,7 @@ Analyze: Does "{user_question}" ask for results PER group/category or OVERALL re
 
 Write only the SQL query."""
 
-    sql_query = execute_ollama_prompt(prompt, max_tokens=120, temperature=0)
+    sql_query = execute_huggingface_prompt(prompt, max_tokens=120, temperature=0)
     sql_query = sql_query.strip()
 
     # Extract SQL - remove any text before SELECT
@@ -250,7 +270,7 @@ SQL query: {sql_query}
 Results: {result_text}
 
 Provide a natural language answer."""
-    return execute_ollama_prompt(prompt, max_tokens=300, temperature=0.5)
+    return execute_huggingface_prompt(prompt, max_tokens=300, temperature=0.5)
 
 
 @app.get("/")

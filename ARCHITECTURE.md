@@ -221,4 +221,4 @@ sequenceDiagram
 - **File Upload**: CSV/excel data import capabilities
 - **Dashboard**: Interactive data visualization
 - **API Extensions**: REST API for programmatic access</content>
-<parameter name="filePath">d:\Python\AI_Data_Engineer\rag_data_assistant\ARCHITECTURE.md
+<parameter name="filePath">d:\Python\AI_Data_Engineer\ai_data_assistant\ARCHITECTURE.md
